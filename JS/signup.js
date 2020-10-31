@@ -11,3 +11,30 @@ class Signup {
     this.buttonInput = document.querySelector(".signup-button");
     this.errorsWrapper = document.querySelector(".message-container");
   }
+
+// check if the email sytax is correct
+emailSyntax = ()=>{}
+
+// password
+handlePasswordInput = ()=>{}
+
+//repeeat password
+
+handleRepeatPasswordInput = () =>{}
+
+//send/submit date
+saveData = () => {}
+
+
+addListners = () =>{
+      this.emailInput.addEventListener('input', this.emailSyntax);
+      this.passwordInput.addEventListener('input', this.handlePasswordInput);
+      this.passwordInput.addEventListener('input', this.handleRepeatPasswordInput);
+      this.buttonInput.addEventListener('click', this.saveData);
+ 
+
+}
+}
+
+const singup - new Signup()
+
