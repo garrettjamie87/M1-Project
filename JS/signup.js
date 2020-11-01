@@ -26,7 +26,7 @@ handleRepeatPasswordInput = () =>{}
 saveData = () => {}
 
 
-addListners = () =>{
+addListeners = () =>{
       this.emailInput.addEventListener('input', this.emailSyntax);
       this.passwordInput.addEventListener('input', this.handlePasswordInput);
       this.passwordInput.addEventListener('input', this.handleRepeatPasswordInput);
@@ -36,5 +36,8 @@ addListners = () =>{
 }
 }
 
-const singup - new Signup()
+const signup = new Signup()
 
+      
+    
+    
