@@ -138,8 +138,11 @@ img {
       color:rgb(137, 137, 133)
 }
 
-.search-bar input {
-     magin-left: 50px
+.search-bar {
+    display: flex;
+    justify-content: center;
+
+
 }
 /*** Media queries ***/
 

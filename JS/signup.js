@@ -12,6 +12,7 @@ class Signup {
   }
 
   // check if the email sytax is correct
+  
   handleEmailInput = (event) => {
     const emailInput = event.target;
     const email = emailInput.value;
@@ -92,7 +93,6 @@ class Signup {
 
     //create a new user
     const newUser = new User(name, email, password);
-    console.log(newUser);
 
     //save the user to the 'dummy' database
     db.saveNewUser(newUser);
@@ -106,15 +106,16 @@ class Signup {
 
 
 
-  addListeners = () => {
+  addListener = () => {
     this.emailInput.addEventListener('input', this.handleEmailInput);
     this.passwordInput.addEventListener('input', this.handlePasswordInput);
     this.repeatPasswordInput.addEventListener('input', this.handleRepeatPasswordInput);
     this.buttonInput.addEventListener('click', this.saveData);
-
+ 
 
   }
 }
 
 const signup = new Signup();
+
 window.addEventListener('load', signup.addListeners);
