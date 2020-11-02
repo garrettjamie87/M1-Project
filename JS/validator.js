@@ -4,21 +4,21 @@ class Validator {
       constructor() {
             this.invalidEmailError = 'A valid email you must enter';
             this.emailExistsError = 'Taken, this email address is';
-            this.passwordError = '6 characters long, the password must be';
-            this.repeatPasswordError = 'Matching, the passwords should be';
+            this.passwordError = '6 characters long, the password must be!';
+            this.repeatPasswordError = 'Matching, the passwords should be!';
 
 
             this.errors = {
                   invalidEmailError: this.invalidEmailError,
                   passwordError: this.passwordError,
-                  repeatPasswordError: this.repeatPasswordError
-            }
+                  repeatPasswordError: this.repeatPasswordError,
+            };
       }
 
       validateValidEmail = (email) => {
 
             //validate if the syntax is correct
-            if (this.emailSyntaxIsValid) {
+            if (this.emailSyntaxIsValid(email)) {
                   delete this.errors.invalidEmailError;
             } else {
                   this.errors.invalidEmailError = this.invalidEmailError;
@@ -34,7 +34,7 @@ class Validator {
 
 
 
-      validateUniqueEmail = (email) => {
+      validateUniqueEmail = (newEmail) => {
             const users = db.getAllUsers();
 
             let emailUnique = true;
@@ -48,7 +48,7 @@ class Validator {
             if (emailUnique) {
                   delete this.errors.emailExistsError
             } else {
-                  this.errors.emailExistsError = thie.emailExistsError;
+                  this.errors.emailExistsError = this.emailExistsError;
             }
 
       };
@@ -73,7 +73,7 @@ class Validator {
             }
       };
 
-      getError = () => {
+      getErrors = () => {
             return this.errors;
       };
 

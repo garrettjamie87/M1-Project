@@ -20,10 +20,12 @@ class Signup {
     validator.validateValidEmail(email);
     validator.validateUniqueEmail(email);
 
-    const errors = vaidator.getErrors();
+    this.setErrorMessages();
 
 
   };
+
+
 
   // password
   handlePasswordInput = (event) => {
@@ -36,7 +38,10 @@ class Signup {
 
     validator.validatePassword(password);
     validator.validateRepeatPassword(password, repeatPassword);
+    this.setErrorMessages();
   };
+
+
 
   //repeeat password
   handleRepeatPasswordInput = (event) => {
@@ -49,7 +54,32 @@ class Signup {
 
     validator.validatePassword(password);
     validator.validateRepeatPassword(password, repeatPasswordInput);
+
+    this.setErrorMessages();
+
   };
+
+  //alerts user below signup form
+
+  setErrorMessages = () => {
+
+    // Clear previous messages
+
+    this.errorsWrapper.innerHTML = "";
+
+    const errorsObj = validator.getErrors();
+
+    const errorStringsArr = Object.values(errorsObj);
+
+    errorStringsArr.forEach((str) => {
+      const p = document.createElement('p');
+      p.textContent = str;
+
+      this.errorsWrapper.appendChild(p);
+    })
+  }
+
+
 
   //send/submit date
   saveData = (event) => {
