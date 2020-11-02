@@ -25,8 +25,8 @@ const passwordInput = event.target;
 const password = passwordInput.value;
 // console.log(password); 
 }
-//repeeat password
 
+//repeeat password
 handleRepeatPasswordInput = (event) =>{
   const repeatPasswordInput = event.target;
   const repeatPassword = repeatPasswordInput.value;
@@ -44,6 +44,9 @@ saveData = (event) => {
   //create a new user
 const newUser = new User(name, email, password);
 console.log(newUser);
+
+//save the user to the 'dummy' database
+db.saveNewUser( newUser);
 
   // now we need to save the user in the local storage
   this.nameInput.value = "";
