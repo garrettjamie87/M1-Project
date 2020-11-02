@@ -1,4 +1,3 @@
-
 "use strict";
 
 class Signup {
@@ -12,64 +11,80 @@ class Signup {
     this.errorsWrapper = document.querySelector(".message-container");
   }
 
-// check if the email sytax is correct
-handleEmailInput = (event)=>{
- const emailInput = event.target; 
- const email = emailInput.value;
-  // console.log (email);
-};
+  // check if the email sytax is correct
+  handleEmailInput = (event) => {
+    const emailInput = event.target;
+    const email = emailInput.value;
+    // console.log (email);
 
-// password
-handlePasswordInput = (event)=>{
-const passwordInput = event.target;
-const password = passwordInput.value;
-// console.log(password); 
-}
+    validator.validateValidEmail(email);
+    validator.validateUniqueEmail(email);
 
-//repeeat password
-handleRepeatPasswordInput = (event) =>{
-  const repeatPasswordInput = event.target;
-  const repeatPassword = repeatPasswordInput.value;
-};
-
-//send/submit date
-saveData = (event) => {
-
-  event.preventDefault();
-
-  const name = this.nameInput.value;
-  const email = this.emailInput.value;
-  const password = this.passwordInput.value
-
-  //create a new user
-const newUser = new User(name, email, password);
-console.log(newUser);
-
-//save the user to the 'dummy' database
-db.saveNewUser( newUser);
-
-  // now we need to save the user in the local storage
-  this.nameInput.value = "";
-  this.emailInput.value = "";
-  this.passwordInput.value = "";
-
-};
+    const errors = vaidator.getErrors();
 
 
+  };
 
-addListeners = () =>{
-      this.emailInput.addEventListener('input', this.handleEmailInput);
-      this.passwordInput.addEventListener('input', this.handlePasswordInput);
-      this.repeatPasswordInput.addEventListener('input', this.handleRepeatPasswordInput);
-      this.buttonInput.addEventListener('click', this.saveData);
- 
+  // password
+  handlePasswordInput = (event) => {
 
-}
+    const passwordInput = event.target;
+    const repeatPasswordInput = this.repeatPasswordInput;
+    const password = passwordInput.value;
+    const repeatPassword = repeatPasswordInput.value;
+
+
+    validator.validatePassword(password);
+    validator.validateRepeatPassword(password, repeatPassword);
+  };
+
+  //repeeat password
+  handleRepeatPasswordInput = (event) => {
+
+    const passwordInput = event.target;
+    const repeatPasswordInput = this.repeatPasswordInput;
+    const password = passwordInput.value;
+    const repeatPassword = repeatPasswordInput.value;
+
+
+    validator.validatePassword(password);
+    validator.validateRepeatPassword(password, repeatPasswordInput);
+  };
+
+  //send/submit date
+  saveData = (event) => {
+
+    event.preventDefault();
+
+    const name = this.nameInput.value;
+    const email = this.emailInput.value;
+    const password = this.passwordInput.value
+
+    //create a new user
+    const newUser = new User(name, email, password);
+    console.log(newUser);
+
+    //save the user to the 'dummy' database
+    db.saveNewUser(newUser);
+
+    // now we need to save the user in the local storage
+    this.nameInput.value = "";
+    this.emailInput.value = "";
+    this.passwordInput.value = "";
+
+  };
+
+
+
+  addListeners = () => {
+    this.emailInput.addEventListener('input', this.handleEmailInput);
+    this.passwordInput.addEventListener('input', this.handlePasswordInput);
+    this.repeatPasswordInput.addEventListener('input', this.handleRepeatPasswordInput);
+    this.buttonInput.addEventListener('click', this.saveData);
+
+
+  }
 }
 
 const signup = new Signup();
 window.addEventListener('load', signup.addListeners);
-
-      
-    
-    
