@@ -1,7 +1,8 @@
 'use strict'
 
-getFirstPosition();
 
+
+getFirstPosition()  
 async function getFirstPosition() {
       const epNum = document.querySelector(".first-position");
      try {
@@ -15,15 +16,21 @@ async function getFirstPosition() {
        const wookie = dataAPI.results[0]
        console.log(wookie);
        const createSpan= document.createElement('div')
-       createSpan.innerHTML=`<p>${wookie.director}</p>
+       createSpan.innerHTML=`<p>${wookie.title}
+       <p>${wookie.episode_id}</p>
+
+       <p>${wookie.director}</p>
        <p>${wookie.release_date}</p>
+       
        `
        epNum.appendChild(createSpan)
        console.log("data", dataAPI);
      } catch (err) {
        console.log(err);
      }
+     
    }
+
 //************************************* */
 
 
@@ -41,8 +48,12 @@ getSecondPosition();
        const wookie = dataAPI.results[1]
        console.log(wookie);
        const createSpan= document.createElement('div')
-       createSpan.innerHTML=`<p>${wookie.director}</p>
+       createSpan.innerHTML=`<p>${wookie.title}
+       <p>${wookie.episode_id}</p>
+
+       <p>${wookie.director}</p>
        <p>${wookie.release_date}</p>
+       
        `
        epNum.appendChild(createSpan)
        console.log("data", dataAPI);
@@ -66,8 +77,12 @@ getSecondPosition();
        const wookie = dataAPI.results[2]
        console.log(wookie);
        const createSpan= document.createElement('div')
-       createSpan.innerHTML=`<p>${wookie.director}</p>
+       createSpan.innerHTML=`<p>${wookie.title}
+       <p>${wookie.episode_id}</p>
+
+       <p>${wookie.director}</p>
        <p>${wookie.release_date}</p>
+       
        `
        epNum.appendChild(createSpan)
        console.log("data", dataAPI);
@@ -92,8 +107,12 @@ getSecondPosition();
      const wookie = dataAPI.results[3]
      console.log(wookie);
      const createSpan= document.createElement('div')
-     createSpan.innerHTML=`<p>${wookie.director}</p>
+     createSpan.innerHTML=`<p>${wookie.title}
+     <p>${wookie.episode_id}</p>
+
+     <p>${wookie.director}</p>
      <p>${wookie.release_date}</p>
+     
      `
      epNum.appendChild(createSpan)
      console.log("data", dataAPI);
@@ -118,8 +137,12 @@ getSecondPosition();
    const wookie = dataAPI.results[4]
    console.log(wookie);
    const createSpan= document.createElement('div')
-   createSpan.innerHTML=`<p>${wookie.director}</p>
+   createSpan.innerHTML=`<p>${wookie.title}
+   <p>${wookie.episode_id}</p>
+
+   <p>${wookie.director}</p>
    <p>${wookie.release_date}</p>
+   
    `
    epNum.appendChild(createSpan)
    console.log("data", dataAPI);
@@ -144,8 +167,11 @@ getSecondPosition();
    const wookie = dataAPI.results[5]
    console.log(wookie);
    const createSpan= document.createElement('div')
-   createSpan.innerHTML=`<p>${wookie.director}</p>
+   createSpan.innerHTML=`<p>${wookie.title}
+   <p>${wookie.episode_id}</p>
+   <p>${wookie.director}</p>
    <p>${wookie.release_date}</p>
+   
    `
    epNum.appendChild(createSpan)
    console.log("data", dataAPI);
