@@ -6,7 +6,7 @@ class Login {
             this.emailInput = document.querySelector("#email");
             this.passwordInput = document.querySelector("#password");
             this.messageContainer = document.querySelector("#message-container");
-            this.loginButton = document.querySelector("#login-button");
+            this.loginButton = document.querySelector(".login-button");
       }
 
 
@@ -62,6 +62,6 @@ class Login {
 const login = new Login();
 
 window.addEventListener('load', function () {
- login.loginButton.addEventListener('click', login.handleSubmit );
+login.loginButton.addEventListener('click', login.handleSubmit );
 
 })

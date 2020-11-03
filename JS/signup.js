@@ -27,7 +27,6 @@ class Signup {
   };
 
 
-
   // password
   handlePasswordInput = (event) => {
 
@@ -41,7 +40,6 @@ class Signup {
     validator.validateRepeatPassword(password, repeatPassword);
     this.setErrorMessages();
   };
-
 
 
   //repeeat password
@@ -106,12 +104,12 @@ class Signup {
 
 
 
-  addListener = () => {
-    this.emailInput.addEventListener('input', this.handleEmailInput);
+  addListeners = () => {
     this.passwordInput.addEventListener('input', this.handlePasswordInput);
     this.repeatPasswordInput.addEventListener('input', this.handleRepeatPasswordInput);
     this.buttonInput.addEventListener('click', this.saveData);
- 
+    this.emailInput.addEventListener('input', this.handleEmailInput);
+
 
   }
 }

@@ -29,13 +29,21 @@ nav .navbar-nav li a {
       top: 53%;
       transform: translate(-50%, -50%);
       width: 34em;
+     
 }
 
 img {
       width: 100%;
 }
 
+.middle-section{
+      height:300px;
 
+}
+
+.myPic{
+      height: 200x
+}
 
 
 /* strap line and description */
@@ -144,6 +152,13 @@ img {
 
 
 }
+
+.card-title{
+      text-align: center;
+      font-size: 30px;
+}
+
+
 /*** Media queries ***/
 
 @media (max-width: 768px) {
