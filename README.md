@@ -6,7 +6,7 @@
 
 
 
-A Wikipedia of Star Wars species. Just click on your favourite character to find out information about them about them, including species, language and life-span!
+A Wikipedia of Star Wars species, vehicles and planets! Just click on your favourite character or picture to find out information about them about them!
 
 
 

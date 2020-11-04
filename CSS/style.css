@@ -7,35 +7,69 @@ body {
 }
 
 
-/* navbar*/
-
+/* navbar */
 .navbar {
       font-size: 40px;
-
 }
-
 
 nav .navbar-nav li a {
       color: slate grey !important;
-
 }
 
 /* StarWars logo and animation */
-
 .starwars {
       height: 17em;
       left: 50%;
       position: absolute;
       top: 53%;
       transform: translate(-50%, -50%);
-      width: 34em;
-     
+      width: 34em;     
 }
 
 img {
       width: 100%;
 }
 
+/* neon wookipedia sign */
+.strap-line{
+      font-size: 40px;
+      text-align: center;
+      position: relative;
+      top: 40px;
+      left: 50%;
+}
+
+
+.neon{
+      
+      color: rgb(24, 24, 18);
+      transform: translate(-50%, -50%);
+      align-items: center;
+      font-weight: 200;
+      letter-spacing: 8px;
+      text-shadow: 1px 0px 4px rgb(211, 115, 163), 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #1c1a04, 2px 3px 15px #ceff47, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #7e8e04,40px 0vw 200px #9f9d11;
+    }
+    
+    .flicker-slow{
+      animation: flicker 3s linear infinite;
+    }
+    
+    .flicker-fast{
+      animation: flicker 1s linear infinite;
+    }
+    
+    @keyframes flicker {
+          0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+                //text-shadow: none;
+        opacity: .99;
+                
+          }
+          20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+                opacity: 0.4;
+          }
+    }
+    
+    
 .middle-section{
       display: flex;
 	flex-direction: column;
@@ -53,15 +87,7 @@ img {
 }
 
 
-/* strap line and description */
 
-.strap-line {
-      color: grey;
-      position: static;
-      text-align: center;
-      font-size: 40px;
-      margin-top: 50px;
-}
 
 /* log-in page */
 
@@ -213,8 +239,85 @@ img {
             text-align: center;
             margin-bottom: 50px;
       }
+
+.faq-title{
+            font-size: 70px;
+            color: rgb(211, 115, 163);
+            text-align: center;
+            margin-bottom: 50px;
+
+}
+
+.planet{
+      width:300px;
+      height:300px;
+      position:absolute;
+      border-radius:50%;
+      overflow:hidden;
+      box-shadow: 0 0 60px -20px rgba(255, 189, 3, 0.72), -14px -15px 40px -10px rgba(255, 238, 191, 0.23);
+      left:50%;
+      top:50%;
+      margin:-150px;
+    }
+    .planet .mask{
+      width:100%;
+      height:100%;
+      position: absolute;
+      box-shadow:inset -10px -10px 40px #251303, inset 10px 10px 30px -10px rgba(255, 204, 159, 0.6);
+      border-radius:50%;
+    }
+    .planet .background{
+      animation: translateBackground 40s infinite linear;  
+      background:url(http://artem.anmedio.ru/dev/planet/mars.jpg) repeat-x;
+      width:300px;
+      height:300px;
+      position:absolute;
+      border-radius:50%;
+    }
+    .planet .clouds{
+      background:url(http://artem.anmedio.ru/dev/planet/clouds.png) repeat-x;
+      width:300px;
+      height:300px;
+      position:absolute;
+      border-radius:50%;
+      animation: translateBackground 30s infinite linear;
+      opacity: 0.4;
+    }
+    .planet .wrap{
+      width:300px;
+      height:300px;
+      position:absolute;
+      border-radius:50%;
+      animation: rotatePlanet 150s infinite linear;  
+    }
+    @keyframes translateBackground{
+      0%{
+        background-position-x:0;
+      }
+      100%{
+        background-position-x:-600px;
+      }
+    }
+    @keyframes rotatePlanet{
+      0%{
+        transform:rotateZ(0);
+      }
+      100%{
+        transform:rotateZ(-360deg);
+      }
+    }
+    
  /* Flip Cards */
 
+/* .card-deck{
+      display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+      align-content: space-around;
+      width: 80%;
+
+} */
 
 .scene{
       width: 200px;
