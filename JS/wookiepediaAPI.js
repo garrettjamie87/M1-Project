@@ -8,7 +8,7 @@ async function getFirstPosition() {
      try {
        // storing the response fetching the data
        const response = await fetch(
-         'https://swapi.dev/api/films/'
+         'https://swapi.dev/api/species/'
        );
        console.log("response", response);
        // storing data in form of a json file
@@ -16,11 +16,11 @@ async function getFirstPosition() {
        const wookie = dataAPI.results[0]
        console.log(wookie);
        const createSpan= document.createElement('div')
-       createSpan.innerHTML=`<p>${wookie.title}
-       <p>${wookie.episode_id}</p>
+       createSpan.innerHTML=`<p>${wookie.name}
+       <p>Species: ${wookie.classification}</p>
 
-       <p>${wookie.director}</p>
-       <p>${wookie.release_date}</p>
+       <p>Lifespan: ${wookie.average_lifespan}</p>
+       <p>Language: ${wookie.language}</p>
        
        `
        epNum.appendChild(createSpan)
@@ -40,19 +40,19 @@ getSecondPosition();
      try {
        // storing the response fetching the data
        const response = await fetch(
-         'https://swapi.dev/api/films/'
-       );
-       console.log("response", response);
-       // storing data in form of a json file
-       const dataAPI = await response.json();
-       const wookie = dataAPI.results[1]
-       console.log(wookie);
-       const createSpan= document.createElement('div')
-       createSpan.innerHTML=`<p>${wookie.title}
-       <p>${wookie.episode_id}</p>
+        'https://swapi.dev/api/species/'
+      );
+      console.log("response", response);
+      // storing data in form of a json file
+      const dataAPI = await response.json();
+      const wookie = dataAPI.results[1]
+      console.log(wookie);
+      const createSpan= document.createElement('div')
+      createSpan.innerHTML=`<p>${wookie.name}
+      <p>Species: ${wookie.classification}</p>
 
-       <p>${wookie.director}</p>
-       <p>${wookie.release_date}</p>
+      <p>Lifespan: ${wookie.average_lifespan}</p>
+      <p>Language: ${wookie.language}</p>
        
        `
        epNum.appendChild(createSpan)
@@ -69,21 +69,21 @@ getSecondPosition();
       try {
        // storing the response fetching the data
        const response = await fetch(
-         'https://swapi.dev/api/films/'
-       );
-       console.log("response", response);
-       // storing data in form of a json file
-       const dataAPI = await response.json();
-       const wookie = dataAPI.results[2]
-       console.log(wookie);
-       const createSpan= document.createElement('div')
-       createSpan.innerHTML=`<p>${wookie.title}
-       <p>${wookie.episode_id}</p>
+        'https://swapi.dev/api/species/'
+      );
+      console.log("response", response);
+      // storing data in form of a json file
+      const dataAPI = await response.json();
+      const wookie = dataAPI.results[2]
+      console.log(wookie);
+      const createSpan= document.createElement('div')
+      createSpan.innerHTML=`<p>${wookie.name}
+      <p>Species: ${wookie.classification}</p>
 
-       <p>${wookie.director}</p>
-       <p>${wookie.release_date}</p>
-       
-       `
+      <p>Lifespan: ${wookie.average_lifespan}</p>
+      <p>Language: ${wookie.language}</p>
+      
+      `
        epNum.appendChild(createSpan)
        console.log("data", dataAPI);
      } catch (err) {
@@ -99,7 +99,7 @@ getSecondPosition();
     try {
      // storing the response fetching the data
      const response = await fetch(
-       'https://swapi.dev/api/films/'
+       'https://swapi.dev/api/species/'
      );
      console.log("response", response);
      // storing data in form of a json file
@@ -107,11 +107,11 @@ getSecondPosition();
      const wookie = dataAPI.results[3]
      console.log(wookie);
      const createSpan= document.createElement('div')
-     createSpan.innerHTML=`<p>${wookie.title}
-     <p>${wookie.episode_id}</p>
+     createSpan.innerHTML=`<p>${wookie.name}
+     <p>Species: ${wookie.classification}</p>
 
-     <p>${wookie.director}</p>
-     <p>${wookie.release_date}</p>
+     <p>Lifespan: ${wookie.average_lifespan}</p>
+     <p>Language: ${wookie.language}</p>
      
      `
      epNum.appendChild(createSpan)
@@ -129,7 +129,7 @@ getSecondPosition();
   try {
    // storing the response fetching the data
    const response = await fetch(
-     'https://swapi.dev/api/films/'
+     'https://swapi.dev/api/species/'
    );
    console.log("response", response);
    // storing data in form of a json file
@@ -137,11 +137,11 @@ getSecondPosition();
    const wookie = dataAPI.results[4]
    console.log(wookie);
    const createSpan= document.createElement('div')
-   createSpan.innerHTML=`<p>${wookie.title}
-   <p>${wookie.episode_id}</p>
+   createSpan.innerHTML=`<p>${wookie.name}
+   <p>Species: ${wookie.classification}</p>
 
-   <p>${wookie.director}</p>
-   <p>${wookie.release_date}</p>
+   <p>Lifespan: ${wookie.average_lifespan}</p>
+   <p>Language: ${wookie.language}</p>
    
    `
    epNum.appendChild(createSpan)
@@ -159,7 +159,7 @@ getSecondPosition();
   try {
    // storing the response fetching the data
    const response = await fetch(
-     'https://swapi.dev/api/films/'
+     'https://swapi.dev/api/species/'
    );
    console.log("response", response);
    // storing data in form of a json file
@@ -167,10 +167,11 @@ getSecondPosition();
    const wookie = dataAPI.results[5]
    console.log(wookie);
    const createSpan= document.createElement('div')
-   createSpan.innerHTML=`<p>${wookie.title}
-   <p>${wookie.episode_id}</p>
-   <p>${wookie.director}</p>
-   <p>${wookie.release_date}</p>
+   createSpan.innerHTML=`<p>${wookie.name}
+   <p>Species: ${wookie.classification}</p>
+
+   <p>Lifespan: ${wookie.average_lifespan}</p>
+   <p>Language: ${wookie.language}</p>
    
    `
    epNum.appendChild(createSpan)
@@ -179,3 +180,126 @@ getSecondPosition();
    console.log(err);
  }
 }
+
+//************************************* */
+
+getseventhPosition();
+async function getseventhPosition() {
+ const epNum = document.querySelector(".seventh-position");
+ try {
+  // storing the response fetching the data
+  const response = await fetch(
+    'https://swapi.dev/api/species/'
+  );
+  console.log("response", response);
+  // storing data in form of a json file
+  const dataAPI = await response.json();
+  const wookie = dataAPI.results[6]
+  console.log(wookie);
+  const createSpan= document.createElement('div')
+  createSpan.innerHTML=`<p>${wookie.name}
+  <p>Species: ${wookie.classification}</p>
+
+  <p>Lifespan: ${wookie.average_lifespan}</p>
+  <p>Language: ${wookie.language}</p>
+  
+  `
+  epNum.appendChild(createSpan)
+  console.log("data", dataAPI);
+} catch (err) {
+  console.log(err);
+}
+}
+
+
+//************************************* */
+
+geteighthPosition();
+async function geteighthPosition() {
+ const epNum = document.querySelector(".eighth-position");
+ try {
+  // storing the response fetching the data
+  const response = await fetch(
+    'https://swapi.dev/api/species/'
+  );
+  console.log("response", response);
+  // storing data in form of a json file
+  const dataAPI = await response.json();
+  const wookie = dataAPI.results[7]
+  console.log(wookie);
+  const createSpan= document.createElement('div')
+  createSpan.innerHTML=`<p>${wookie.name}
+  <p>Species: ${wookie.classification}</p>
+
+  <p>Lifespan: ${wookie.average_lifespan}</p>
+  <p>Language: ${wookie.language}</p>
+  
+  `
+  epNum.appendChild(createSpan)
+  console.log("data", dataAPI);
+} catch (err) {
+  console.log(err);
+}
+}
+
+//************************************* */
+
+getninthPosition();
+async function getninthPosition() {
+ const epNum = document.querySelector(".ninth-position");
+ try {
+  // storing the response fetching the data
+  const response = await fetch(
+    'https://swapi.dev/api/species/'
+  );
+  console.log("response", response);
+  // storing data in form of a json file
+  const dataAPI = await response.json();
+  const wookie = dataAPI.results[8]
+  console.log(wookie);
+  const createSpan= document.createElement('div')
+  createSpan.innerHTML=`<p>${wookie.name}
+  <p>Species: ${wookie.classification}</p>
+
+  <p>Lifespan: ${wookie.average_lifespan}</p>
+  <p>Language: ${wookie.language}</p>
+  
+  `
+  epNum.appendChild(createSpan)
+  console.log("data", dataAPI);
+} catch (err) {
+  console.log(err);
+}
+}
+
+//************************************* */
+
+gettenthPosition();
+async function gettenthPosition() {
+ const epNum = document.querySelector(".tenth-position");
+ try {
+  // storing the response fetching the data
+  const response = await fetch(
+    'https://swapi.dev/api/species/'
+  );
+  console.log("response", response);
+  // storing data in form of a json file
+  const dataAPI = await response.json();
+  const wookie = dataAPI.results[9]
+  console.log(wookie);
+  const createSpan= document.createElement('div')
+  createSpan.innerHTML=`<p>${wookie.name}
+  <p>Species: ${wookie.classification}</p>
+
+  <p>Lifespan: ${wookie.average_lifespan}</p>
+  <p>Language: ${wookie.language}</p>
+  
+  `
+  epNum.appendChild(createSpan)
+  console.log("data", dataAPI);
+} catch (err) {
+  console.log(err);
+}
+}
+
+

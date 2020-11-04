@@ -213,40 +213,68 @@ img {
     }
     
     .movie-poster__face--front {
-      background: url('/images/newhope.jpeg') no-repeat center center;
+      background: url('/images/Human.jpg') no-repeat center center;
       background-size: cover;
       height: 100%;
       overflow: hidden;
     }
     .movie-poster__face--front-one {
-      background: url('/images/theEmpireStikesBack.jpeg') no-repeat center center;
+      background: url('/images/Droid.jpg') no-repeat center center;
       background-size: cover;
       height: 100%;
       overflow: hidden;
     }
     .movie-poster__face--front-two {
-      background: url('/images/return\ of\ the\ jedi.jpeg') no-repeat center center;
+      background: url('/images/Wookie.jpg') no-repeat center center;
       background-size: cover;
       height: 100%;
       overflow: hidden;
     }
 
     .movie-poster__face--front-three {
-      background: url('/images/phantom\ menace.jpeg') no-repeat center center;
+      background: url('/images/Rodian.jpg') no-repeat center center;
       background-size: cover;
       height: 100%;
       overflow: hidden;
     }
 
     .movie-poster__face--front-four {
-      background: url('/images/attack\ of\ the\ clones.jpeg') no-repeat center center;
+      background: url('/images/Hutt.jpg') no-repeat center center;
       background-size: cover;
       height: 100%;
       overflow: hidden;
     }
 
     .movie-poster__face--front-five {
-      background: url('/images/revenge\ of\ the\ sith.jpeg') no-repeat center center;
+      background: url('/images/Yoda.jpg') no-repeat center center;
+      background-size: cover;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .movie-poster__face--front-six {
+      background: url('/images/Trandoshan.jpg') no-repeat center center;
+      background-size: cover;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .movie-poster__face--front-seven {
+      background: url('/images/Mon\ Calamari.jpg') no-repeat center center;
+      background-size: cover;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .movie-poster__face--front-eight {
+      background: url('/images/Ewok.png') no-repeat center center;
+      background-size: cover;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .movie-poster__face--front-nine {
+      background: url('/images/Sullustan.png') no-repeat center center;
       background-size: cover;
       height: 100%;
       overflow: hidden;
