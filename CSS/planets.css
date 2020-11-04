@@ -1,0 +1,128 @@
+body {
+      background: black url(//cssanimation.rocks/demo/starwars/images/bg.jpg);
+      font-family: 'Pathway Gothic One', sans-serif;
+    
+    }
+    
+    
+    .planet-title {
+      font-size: 70px;
+      color: rgb(211, 115, 163);
+      text-align: center;
+      margin-bottom: 50px;
+    
+    }
+    
+    /* Flip Cards */
+    
+    
+    .scene{
+          width: 200px;
+          height: 260px;
+          border: 1px solid;
+          margin: 40px 0;
+          perspective: 600px;
+    }
+         
+    
+    .movie-poster {
+          width: 100%;
+          transition: transform 1s;
+          transform-style: preserve-3d;
+          cursor: pointer;
+          position: relative;
+        }
+        
+        .movie-poster.is-flipped {
+          transform: rotateY(180deg);
+        }
+        
+        .movie-poster__face {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          line-height: 260px;
+          color: white;
+          text-align: center;
+          font-weight: bold;
+          font-size: 40px;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+        }
+        
+        .movie-poster__face--front {
+          background: url('/images/planet.png') no-repeat center center;
+          background-size: cover;
+          height: 100%;
+          overflow: hidden;
+        }
+        .movie-poster__face--front-one {
+          background: url('/images/planet.png') no-repeat center center;
+          background-size: cover;
+          height: 100%;
+          overflow: hidden;
+        }
+        .movie-poster__face--front-two {
+          background: url('/images/planet.png') no-repeat center center;
+          background-size: cover;
+          height: 100%;
+          overflow: hidden;
+        }
+    
+        .movie-poster__face--front-three {
+          background: url('/images/planet.png') no-repeat center center;
+          background-size: cover;
+          height: 100%;
+          overflow: hidden;
+        }
+    
+        .movie-poster__face--front-four {
+          background: url('/images/planet.png') no-repeat center center;
+          background-size: cover;
+          height: 100%;
+          overflow: hidden;
+        }
+    
+        .movie-poster__face--front-five {
+          background: url('/images/planet.png') no-repeat center center;
+          background-size: cover;
+          height: 100%;
+          overflow: hidden;
+        }
+    
+        .movie-poster__face--front-six {
+          background: url('/images/planet.png') no-repeat center center;
+          background-size: cover;
+          height: 100%;
+          overflow: hidden;
+        }
+    
+        .movie-poster__face--front-seven {
+          background: url('/images/planet.png') no-repeat center center;
+          background-size: cover;
+          height: 100%;
+          overflow: hidden;
+        }
+    
+        .movie-poster__face--front-eight {
+          background: url('/images/planet.png') no-repeat center center;
+          background-size: cover;
+          height: 100%;
+          overflow: hidden;
+        }
+    
+        .movie-poster__face--front-nine {
+          background: url('/images/planet.png') no-repeat center center;
+          background-size: cover;
+          height: 100%;
+          overflow: hidden;
+        }
+    
+        
+        .movie-poster__face--back {
+          background: black url(//cssanimation.rocks/demo/starwars/images/bg.jpg);
+          transform: rotateY(180deg);
+          line-height: 50px;
+        }
+    
+    

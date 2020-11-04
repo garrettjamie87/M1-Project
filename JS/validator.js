@@ -56,7 +56,7 @@ class Validator {
 
 
       validatePassword = (password) =>{
-            if(password.length >= 6) {
+            if(password.length > 5) {
                   delete this.errors.passwordError;
             }else {
                   this.errors.passwordError = this.passwordError;
@@ -76,7 +76,15 @@ class Validator {
       getErrors = () => {
             return this.errors;
       };
-
+      resetValidator = () => {
+            this.errors = {
+              invalidEmailError: this.invalidEmailError,
+              passwordError: this.passwordError,
+              repeatPasswordError: this.repeatPasswordError
+            }
+          }
 }
+
+
 
 const validator = new Validator();

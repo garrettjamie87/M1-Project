@@ -18,7 +18,6 @@ async function getFirstPosition() {
        const createSpan= document.createElement('div')
        createSpan.innerHTML=`<p>${wookie.name}
        <p>Species: ${wookie.classification}</p>
-
        <p>Lifespan: ${wookie.average_lifespan}</p>
        <p>Language: ${wookie.language}</p>
        
@@ -50,7 +49,6 @@ getSecondPosition();
       const createSpan= document.createElement('div')
       createSpan.innerHTML=`<p>${wookie.name}
       <p>Species: ${wookie.classification}</p>
-
       <p>Lifespan: ${wookie.average_lifespan}</p>
       <p>Language: ${wookie.language}</p>
        
@@ -79,7 +77,6 @@ getSecondPosition();
       const createSpan= document.createElement('div')
       createSpan.innerHTML=`<p>${wookie.name}
       <p>Species: ${wookie.classification}</p>
-
       <p>Lifespan: ${wookie.average_lifespan}</p>
       <p>Language: ${wookie.language}</p>
       
@@ -109,7 +106,6 @@ getSecondPosition();
      const createSpan= document.createElement('div')
      createSpan.innerHTML=`<p>${wookie.name}
      <p>Species: ${wookie.classification}</p>
-
      <p>Lifespan: ${wookie.average_lifespan}</p>
      <p>Language: ${wookie.language}</p>
      
@@ -139,7 +135,6 @@ getSecondPosition();
    const createSpan= document.createElement('div')
    createSpan.innerHTML=`<p>${wookie.name}
    <p>Species: ${wookie.classification}</p>
-
    <p>Lifespan: ${wookie.average_lifespan}</p>
    <p>Language: ${wookie.language}</p>
    
@@ -169,7 +164,6 @@ getSecondPosition();
    const createSpan= document.createElement('div')
    createSpan.innerHTML=`<p>${wookie.name}
    <p>Species: ${wookie.classification}</p>
-
    <p>Lifespan: ${wookie.average_lifespan}</p>
    <p>Language: ${wookie.language}</p>
    
@@ -199,7 +193,6 @@ async function getseventhPosition() {
   const createSpan= document.createElement('div')
   createSpan.innerHTML=`<p>${wookie.name}
   <p>Species: ${wookie.classification}</p>
-
   <p>Lifespan: ${wookie.average_lifespan}</p>
   <p>Language: ${wookie.language}</p>
   
@@ -230,7 +223,6 @@ async function geteighthPosition() {
   const createSpan= document.createElement('div')
   createSpan.innerHTML=`<p>${wookie.name}
   <p>Species: ${wookie.classification}</p>
-
   <p>Lifespan: ${wookie.average_lifespan}</p>
   <p>Language: ${wookie.language}</p>
   
@@ -260,7 +252,6 @@ async function getninthPosition() {
   const createSpan= document.createElement('div')
   createSpan.innerHTML=`<p>${wookie.name}
   <p>Species: ${wookie.classification}</p>
-
   <p>Lifespan: ${wookie.average_lifespan}</p>
   <p>Language: ${wookie.language}</p>
   
@@ -290,7 +281,6 @@ async function gettenthPosition() {
   const createSpan= document.createElement('div')
   createSpan.innerHTML=`<p>${wookie.name}
   <p>Species: ${wookie.classification}</p>
-
   <p>Lifespan: ${wookie.average_lifespan}</p>
   <p>Language: ${wookie.language}</p>
   
@@ -301,5 +291,3 @@ async function gettenthPosition() {
   console.log(err);
 }
 }
-
-

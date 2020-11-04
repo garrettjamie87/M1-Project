@@ -31,8 +31,8 @@ class Signup {
   handlePasswordInput = (event) => {
 
     const passwordInput = event.target;
-    const repeatPasswordInput = this.repeatPasswordInput;
     const password = passwordInput.value;
+    const repeatPasswordInput = this.repeatPasswordInput;
     const repeatPassword = repeatPasswordInput.value;
 
 
@@ -46,8 +46,8 @@ class Signup {
   handleRepeatPasswordInput = (event) => {
 
     const passwordInput = event.target;
-    const repeatPasswordInput = this.repeatPasswordInput;
     const password = passwordInput.value;
+    const repeatPasswordInput = this.repeatPasswordInput;
     const repeatPassword = repeatPasswordInput.value;
 
 
@@ -58,42 +58,23 @@ class Signup {
 
   };
 
-  //alerts user below signup form
-
-  setErrorMessages = () => {
-
-    // Clear previous messages
-
-    this.errorsWrapper.innerHTML = "";
-
-    const errorsObj = validator.getErrors();
-
-    const errorStringsArr = Object.values(errorsObj);
-
-    errorStringsArr.forEach((str) => {
-      const p = document.createElement('p');
-      p.textContent = str;
-
-      this.errorsWrapper.appendChild(p);
-    })
-  }
-
-
-
+  
+  
   //send/submit date
   saveData = (event) => {
-
+    
     event.preventDefault();
-
+    
     const name = this.nameInput.value;
     const email = this.emailInput.value;
     const password = this.passwordInput.value
 
     //create a new user
     const newUser = new User(name, email, password);
-
+    
     //save the user to the 'dummy' database
     db.saveNewUser(newUser);
+    console.log(newUser);
 
     // now we need to save the user in the local storage
     this.nameInput.value = "";
@@ -101,16 +82,34 @@ class Signup {
     this.passwordInput.value = "";
 
   };
+  
 
-
-
+  
   addListeners = () => {
     this.passwordInput.addEventListener('input', this.handlePasswordInput);
     this.repeatPasswordInput.addEventListener('input', this.handleRepeatPasswordInput);
     this.buttonInput.addEventListener('click', this.saveData);
     this.emailInput.addEventListener('input', this.handleEmailInput);
+    
 
-
+  }
+  //alerts user below signup form
+  setErrorMessages = () => {
+  
+    // Clear previous messages
+  
+    this.errorsWrapper.innerHTML = "";
+  
+    const errorsObj = validator.getErrors();
+  
+    const errorStringsArr = Object.values(errorsObj);
+  
+    errorStringsArr.forEach((str) => {
+      const p = document.createElement('p');
+      p.textContent = str;
+  
+      this.errorsWrapper.appendChild(p);
+    })
   }
 }
 

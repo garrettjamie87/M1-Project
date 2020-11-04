@@ -37,12 +37,19 @@ img {
 }
 
 .middle-section{
-      height:300px;
+      display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: flex-start;
+     
 
 }
 
 .myPic{
-      height: 200x
+      height:100px;
+      width:100px;
 }
 
 
@@ -177,11 +184,42 @@ img {
             font-family: 'Pathway Gothic One', sans-serif;
             font-size: 40px;
       }
+}
+        
+      @media (max-width: 1024px) {
+            .starwars {
+                  font-size: 7px;
+            }
+
+            .log-in-title {
+                  font-size: 100px;
+                  margin-top: 50px;
+
+
+            }
+
+            .navbar {
+                  padding: 50px 50px;
+                  font-family: 'Pathway Gothic One', sans-serif;
+                  font-size: 30px;
+            }
+           
+            
+      }
+
+.vehicle-title {
+            font-size: 70px;
+            color: rgb(211, 115, 163);
+            text-align: center;
+            margin-bottom: 50px;
+      }
+ /* Flip Cards */
+
 
 .scene{
       width: 200px;
       height: 260px;
-      border: 1px solid #CCC;
+      border: 1px solid;
       margin: 40px 0;
       perspective: 600px;
 }
@@ -288,24 +326,4 @@ img {
     }
 
 
-    
-      @media (max-width: 1024px) {
-            .starwars {
-                  font-size: 7px;
-            }
-
-            .log-in-title {
-                  font-size: 100px;
-                  margin-top: 50px;
-
-
-            }
-
-            .navbar {
-                  padding: 50px 50px;
-                  font-family: 'Pathway Gothic One', sans-serif;
-                  font-size: 10px;
-            }
-           
-            
-      }
+  
