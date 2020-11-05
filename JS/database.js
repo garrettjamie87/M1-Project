@@ -3,7 +3,7 @@
 //methods to get users from localStorage and then to save user
 
 class Database {
-      getAllUsers = ()=> {
+      getAllUsers = () => {
             const usersStr = localStorage.getItem("users");
             const usersArr = JSON.parse(usersStr);
 
@@ -13,7 +13,7 @@ class Database {
                   return usersArr;
             }
       }
-      saveNewUser = (newUser)=> {
+      saveNewUser = (newUser) => {
             const usersArr = this.getAllUsers();
 
             const updatedUsersArr = [...usersArr, newUser];

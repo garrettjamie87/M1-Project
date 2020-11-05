@@ -54,8 +54,6 @@ A Wikipedia of Star Wars species, planets and vehicles! Just click on your favou
 
     
 
-
-
 - - **css/**
 
   - - style.css

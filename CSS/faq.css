@@ -1,11 +1,11 @@
-p{
+p {
       font-size: 50px;
       color: rgb(211, 115, 163);
       ;
 
 }
 
-.ing{
+.ing {
       font-size: 40px;
 }
 
@@ -15,15 +15,4 @@ p{
       color: rgb(211, 115, 163);
       text-align: center;
       margin-bottom: 50px;
-    }
-     
-    .casa{
-      height: 50px;
-      width: 60px;
-      margin: 10px;
-      
-}
-
-.casa:hover{
-  color: rgb(211, 115, 163);
 }

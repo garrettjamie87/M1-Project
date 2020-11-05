@@ -55,20 +55,20 @@ class Validator {
 
 
 
-      validatePassword = (password) =>{
-            if(password.length > 5) {
+      validatePassword = (password) => {
+            if (password.length > 5) {
                   delete this.errors.passwordError;
-            }else {
+            } else {
                   this.errors.passwordError = this.passwordError;
             }
       };
 
 
 
-      validateRepeatPassword = (password, repeatPassword)=> {
-            if(password === repeatPassword){
+      validateRepeatPassword = (password, repeatPassword) => {
+            if (password === repeatPassword) {
                   delete this.errors.repeatPasswordError;
-            }else{
+            } else {
                   this.errors.repeatPasswordError = this.repeatPasswordError;
             }
       };
@@ -78,11 +78,11 @@ class Validator {
       };
       resetValidator = () => {
             this.errors = {
-              invalidEmailError: this.invalidEmailError,
-              passwordError: this.passwordError,
-              repeatPasswordError: this.repeatPasswordError
+                  invalidEmailError: this.invalidEmailError,
+                  passwordError: this.passwordError,
+                  repeatPasswordError: this.repeatPasswordError
             }
-          }
+      }
 }
 
 

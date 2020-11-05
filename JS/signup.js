@@ -12,7 +12,7 @@ class Signup {
   }
 
   // check if the email sytax is correct
-  
+
   handleEmailInput = (event) => {
     const emailInput = event.target;
     const email = emailInput.value;
@@ -58,20 +58,20 @@ class Signup {
 
   };
 
-  
-  
+
+
   //send/submit date
   saveData = (event) => {
-    
+
     event.preventDefault();
-    
+
     const name = this.nameInput.value;
     const email = this.emailInput.value;
     const password = this.passwordInput.value
 
     //create a new user
     const newUser = new User(name, email, password);
-    
+
     //save the user to the 'dummy' database
     db.saveNewUser(newUser);
     // console.log(newUser);
@@ -83,44 +83,44 @@ class Signup {
 
     if (newUser) this.redirect();
   };
-  
 
-  
+
+
   addListeners = () => {
     this.passwordInput.addEventListener('input', this.handlePasswordInput);
     this.repeatPasswordInput.addEventListener('input', this.handleRepeatPasswordInput);
     this.buttonInput.addEventListener('click', this.saveData);
     this.emailInput.addEventListener('input', this.handleEmailInput);
-    
+
 
   }
 
   redirect = () => {
     setTimeout(function () {
-          location.assign("login.html")
+      location.assign("login.html")
     }, 2000)
 
 
-}
+  }
 
   //alerts user below signup form
   setErrorMessages = () => {
-  
+
     // Clear previous messages
-  
+
     this.errorsWrapper.innerHTML = "";
-  
+
     const errorsObj = validator.getErrors();
-  
+
     const errorStringsArr = Object.values(errorsObj);
-  
+
     errorStringsArr.forEach((str) => {
       const p = document.createElement('p');
       p.textContent = str;
-  
+
       this.errorsWrapper.appendChild(p);
     })
-    
+
   }
 
 
