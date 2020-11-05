@@ -74,13 +74,14 @@ class Signup {
     
     //save the user to the 'dummy' database
     db.saveNewUser(newUser);
-    console.log(newUser);
+    // console.log(newUser);
 
     // now we need to save the user in the local storage
     this.nameInput.value = "";
     this.emailInput.value = "";
     this.passwordInput.value = "";
 
+    if (newUser) this.redirect();
   };
   
 
@@ -93,6 +94,15 @@ class Signup {
     
 
   }
+
+  redirect = () => {
+    setTimeout(function () {
+          location.assign("login.html")
+    }, 2000)
+
+
+}
+
   //alerts user below signup form
   setErrorMessages = () => {
   
@@ -110,7 +120,10 @@ class Signup {
   
       this.errorsWrapper.appendChild(p);
     })
+    
   }
+
+
 }
 
 const signup = new Signup();

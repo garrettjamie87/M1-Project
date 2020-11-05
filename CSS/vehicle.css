@@ -125,3 +125,13 @@ body {
       line-height: 50px;
     }
 
+    .casa{
+      height: 50px;
+      width: 60px;
+      margin: 10px;
+      
+}
+
+.casa:hover{
+  color: rgb(211, 115, 163);
+}

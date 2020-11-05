@@ -245,6 +245,17 @@ nav .navbar-nav li a {
 
 
 /*********************************************LOGIN PAGE*********************************/
+.casa{
+      height: 50px;
+      width: 60px;
+      margin: 10px;
+      
+}
+
+.casa:hover{
+  color: rgb(211, 115, 163);
+}
+
 
 .log-in-title {
       font-size: 70px;
@@ -377,7 +388,7 @@ nav .navbar-nav li a {
 }
 
 .movie-poster__face--front {
-      background: url("/images/Human.jpg") no-repeat center center;
+      background: url("./../images/Human.jpg") no-repeat center center;
       background-position: 0 0;
       background-size: 100%;
       height: 100%;
@@ -385,7 +396,7 @@ nav .navbar-nav li a {
 }
 
 .movie-poster__face--front-one {
-      background: url("/images/Droid.jpg") no-repeat center center;
+      background: url("./../images/Droid.jpg") no-repeat center center;
       background-position: 0 0;
       background-size: cover;
       height: 100%;
@@ -393,7 +404,7 @@ nav .navbar-nav li a {
 }
 
 .movie-poster__face--front-two {
-      background: url("/images/Wookie.jpg") no-repeat center center;
+      background: url("./../images/Wookie.jpg") no-repeat center center;
       background-size: cover;
       background-position: 0 0;
       height: 100%;
@@ -401,7 +412,7 @@ nav .navbar-nav li a {
 }
 
 .movie-poster__face--front-three {
-      background: url("/images/Rodian.jpg") no-repeat center center;
+      background: url("./../images/Rodian.jpg") no-repeat center center;
       background-size: cover;
       background-position: 0 0;
       height: 100%;
@@ -409,7 +420,7 @@ nav .navbar-nav li a {
 }
 
 .movie-poster__face--front-four {
-      background: url("/images/Hutt.jpg") no-repeat center center;
+      background: url("./../images/Hutt.jpg") no-repeat center center;
       background-size: cover;
       background-position: 0 0;
       height: 100%;
@@ -417,7 +428,7 @@ nav .navbar-nav li a {
 }
 
 .movie-poster__face--front-five {
-      background: url("/images/Yoda.jpg") no-repeat center center;
+      background: url("./../images/Yoda.jpg") no-repeat center center;
       background-size: cover;
       background-position: 0 0;
       height: 100%;
@@ -425,7 +436,7 @@ nav .navbar-nav li a {
 }
 
 .movie-poster__face--front-six {
-      background: url("/images/Trandoshan.jpg") no-repeat center center;
+      background: url("./../images/Trandoshan.jpg") no-repeat center center;
       background-size: cover;
       background-position: 0 0;
       height: 100%;
@@ -433,7 +444,7 @@ nav .navbar-nav li a {
 }
 
 .movie-poster__face--front-seven {
-      background: url("/images/Mon\ Calamari.jpg") no-repeat center center;
+      background: url("./../images/Mon\ Calamari.jpg") no-repeat center center;
       background-size: cover;
       background-position: 0 0;
       height: 100%;
@@ -441,7 +452,7 @@ nav .navbar-nav li a {
 }
 
 .movie-poster__face--front-eight {
-      background: url("/images/Ewok.png") no-repeat center center;
+      background: url("./../images/Ewok.png") no-repeat center center;
       background-size: cover;
       background-position: 0 0;
       height: 100%;
@@ -449,7 +460,7 @@ nav .navbar-nav li a {
 }
 
 .movie-poster__face--front-nine {
-      background: url("/images/Sullustan.png") no-repeat center center;
+      background: url("./../images/Sullustan.png") no-repeat center center;
       background-size: cover;
       background-position: 0 0;
       height: 100%;

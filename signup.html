@@ -14,10 +14,39 @@
 
 </head>
 <body>
-<div>
-  <a href="index.html">
-  <button>HOME</button></a>
-</div>
+  <div class="main-wrapper">
+    <div>
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggler"
+          aria-controls="navbarToggler"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav ml-auto ">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="signup.html">Signup</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div>
   <section>
     <div>
       <h2 class="sign-up-title">SIGN UP</h2>
@@ -31,10 +60,10 @@
             <input type="password" class= "repeat-password" placeholder="****" /><br><br>
             <input type="password" class=  "password" placeholder="****" /><br><br>
            <div>
-             <a href="login.html">
-            <button class="button">
+            
+            <button type="submit" class="button signup-button">
               SIGN UP
-            </button></a>
+            </button>
           </div>
 
             <div>
