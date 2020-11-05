@@ -21,6 +21,7 @@ nav .navbar-nav li a {
 .wrapper-main {
       margin: 0 auto;
       border: 1px solid #fff;
+      height: 800px;
 }
 
 .star-logo {

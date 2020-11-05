@@ -6,7 +6,7 @@
 
 
 
-A Wikipedia of Star Wars species, vehicles and planets! Just click on your favourite character or picture to find out information about them about them!
+A Wikipedia of Star Wars species, planets and vehicles! Just click on your favourite picture to find out information about them about them!
 
 
 
@@ -39,16 +39,30 @@ A Wikipedia of Star Wars species, vehicles and planets! Just click on your favou
 - **root/**
 
 - - index.html
+
   - starwars.html
+
   - login.html
+
   - signup.html
-  - wookiepedia.html
+
+  - speciesAPI.html
+
+  - vehicles.html
+
+  - FAQ.html
+
+    
 
 
 
 - - **css/**
 
   - - style.css
+    - planets.css
+    - vehicle.css
+    - fas.css
+    - reset.css
 
 
 
@@ -56,10 +70,13 @@ A Wikipedia of Star Wars species, vehicles and planets! Just click on your favou
 
   - - Main.js
     - Login.js
-    - WookiepediaAPI.js
+    - speciesAPI.js
+    - vehicle.js
+    - planets.js
     - Signup.js
     - User.js
     - Validator.js
     - flipCard.js
 
 - **img/** 
+
