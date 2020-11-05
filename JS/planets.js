@@ -8,7 +8,7 @@ async function getFirstPosition() {
   try {
     // storing the response fetching the data
     const response = await fetch(
-      'https://swapi.dev/api/planets'
+      'https://swapi.dev/api/planets/'
     );
     console.log("response", response);
     // storing data in form of a json file
@@ -39,7 +39,7 @@ async function getSecondPosition() {
   try {
     // storing the response fetching the data
     const response = await fetch(
-      'https://swapi.dev/api/planets'
+      'https://swapi.dev/api/planets/'
     );
     console.log("response", response);
     // storing data in form of a json file
@@ -67,7 +67,7 @@ async function getThirdPosition() {
   try {
     // storing the response fetching the data
     const response = await fetch(
-      'https://swapi.dev/api/planets'
+      'https://swapi.dev/api/planets/'
     );
     console.log("response", response);
     // storing data in form of a json file
@@ -97,7 +97,7 @@ async function getFourthPosition() {
   try {
     // storing the response fetching the data
     const response = await fetch(
-      'https://swapi.dev/api/planets'
+      'https://swapi.dev/api/planets/'
     );
     console.log("response", response);
     // storing data in form of a json file
@@ -127,7 +127,7 @@ async function getFifthPosition() {
   try {
     // storing the response fetching the data
     const response = await fetch(
-      'https://swapi.dev/api/planets'
+      'https://swapi.dev/api/planets/'
     );
     console.log("response", response);
     // storing data in form of a json file
@@ -157,7 +157,7 @@ async function getsixthPosition() {
   try {
     // storing the response fetching the data
     const response = await fetch(
-      'https://swapi.dev/api/planets'
+      'https://swapi.dev/api/planets/'
     );
     console.log("response", response);
     // storing data in form of a json file
@@ -186,7 +186,7 @@ async function getseventhPosition() {
   try {
     // storing the response fetching the data
     const response = await fetch(
-      'https://swapi.dev/api/planets'
+      'https://swapi.dev/api/planets/'
     );
     console.log("response", response);
     // storing data in form of a json file
@@ -217,7 +217,7 @@ async function geteighthPosition() {
   try {
     // storing the response fetching the data
     const response = await fetch(
-      'https://swapi.dev/api/planets'
+      'https://swapi.dev/api/planets/'
     );
     console.log("response", response);
     // storing data in form of a json file
@@ -246,7 +246,7 @@ async function getninthPosition() {
   try {
     // storing the response fetching the data
     const response = await fetch(
-      'https://swapi.dev/api/planets'
+      'https://swapi.dev/api/planets/'
     );
     console.log("response", response);
     // storing data in form of a json file
@@ -275,7 +275,7 @@ async function gettenthPosition() {
   try {
     // storing the response fetching the data
     const response = await fetch(
-      'https://swapi.dev/api/planets'
+      'https://swapi.dev/api/planets/'
     );
     console.log("response", response);
     // storing data in form of a json file
