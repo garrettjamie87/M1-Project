@@ -55,70 +55,70 @@ body {
 }
 
 .movie-poster__face--front {
-  background: url('/images/Sandcrawler.jpg') no-repeat center center;
+  background: url('./../images/Sandcrawler.jpg') no-repeat center center;
   background-size: cover;
   height: 100%;
   overflow: hidden;
 }
 
 .movie-poster__face--front-one {
-  background: url('/images/Skyhopper.png') no-repeat center center;
+  background: url('./../images/Skyhopper.png') no-repeat center center;
   background-size: cover;
   height: 100%;
   overflow: hidden;
 }
 
 .movie-poster__face--front-two {
-  background: url('/images/tie\ Starfighter.jpg') no-repeat center center;
+  background: url('./../images/tie\ Starfighter.jpg') no-repeat center center;
   background-size: cover;
   height: 100%;
   overflow: hidden;
 }
 
 .movie-poster__face--front-three {
-  background: url('/images/landspeeder.jpg') no-repeat center center;
+  background: url('./../images/landspeeder.jpg') no-repeat center center;
   background-size: cover;
   height: 100%;
   overflow: hidden;
 }
 
 .movie-poster__face--front-four {
-  background: url('/images/tie\ bomber.png') no-repeat center center;
+  background: url('./../images/tie\ bomber.png') no-repeat center center;
   background-size: cover;
   height: 100%;
   overflow: hidden;
 }
 
 .movie-poster__face--front-five {
-  background: url('/images/snowspeeder.png') no-repeat center center;
+  background: url('./../images/snowspeeder.png') no-repeat center center;
   background-size: cover;
   height: 100%;
   overflow: hidden;
 }
 
 .movie-poster__face--front-six {
-  background: url('/images/at-at.jpg') no-repeat center center;
+  background: url('./../images/at-at.jpg') no-repeat center center;
   background-size: cover;
   height: 100%;
   overflow: hidden;
 }
 
 .movie-poster__face--front-seven {
-  background: url('/images/AT\ ST.png') no-repeat center center;
+  background: url('./../images/AT\ ST.png') no-repeat center center;
   background-size: cover;
   height: 100%;
   overflow: hidden;
 }
 
 .movie-poster__face--front-eight {
-  background: url('/images/sail\ barge.jpeg') no-repeat center center;
+  background: url('./../images/sail\ barge.jpeg') no-repeat center center;
   background-size: cover;
   height: 100%;
   overflow: hidden;
 }
 
 .movie-poster__face--front-nine {
-  background: url('/images/cloud\ car.jpg') no-repeat center center;
+  background: url('./../images/cloud\ car.jpg') no-repeat center center;
   background-size: cover;
   height: 100%;
   overflow: hidden;

@@ -55,70 +55,70 @@ body {
 }
 
 .movie-poster__face--front {
-  background: url('/images/Tatooine.png') no-repeat center center;
+  background: url('./../images/Tatooine.png') no-repeat center center;
   background-size: cover;
   height: 100%;
   overflow: hidden;
 }
 
 .movie-poster__face--front-one {
-  background: url('/images/Alderaan.jpg') no-repeat center center;
+  background: url('./../images/Alderaan.jpg') no-repeat center center;
   background-size: cover;
   height: 100%;
   overflow: hidden;
 }
 
 .movie-poster__face--front-two {
-  background: url('/images/Yavin-4.png') no-repeat center center;
+  background: url('./../images/Yavin-4.png') no-repeat center center;
   background-size: cover;
   height: 100%;
   overflow: hidden;
 }
 
 .movie-poster__face--front-three {
-  background: url('/images/Hoth.png') no-repeat center center;
+  background: url('./../images/Hoth.png') no-repeat center center;
   background-size: cover;
   height: 100%;
   overflow: hidden;
 }
 
 .movie-poster__face--front-four {
-  background: url('/images/Dagobah.jpg') no-repeat center center;
+  background: url('./../images/Dagobah.jpg') no-repeat center center;
   background-size: cover;
   height: 100%;
   overflow: hidden;
 }
 
 .movie-poster__face--front-five {
-  background: url('/images/Bespin.png') no-repeat center center;
+  background: url('./../images/Bespin.png') no-repeat center center;
   background-size: cover;
   height: 100%;
   overflow: hidden;
 }
 
 .movie-poster__face--front-six {
-  background: url('/images/endor.png') no-repeat center center;
+  background: url('./../images/endor.png') no-repeat center center;
   background-size: cover;
   height: 100%;
   overflow: hidden;
 }
 
 .movie-poster__face--front-seven {
-  background: url('/images/naboo.jpg') no-repeat center center;
+  background: url('./../images/naboo.jpg') no-repeat center center;
   background-size: cover;
   height: 100%;
   overflow: hidden;
 }
 
 .movie-poster__face--front-eight {
-  background: url('/images/Coruscant.png') no-repeat center center;
+  background: url('./../images/Coruscant.png') no-repeat center center;
   background-size: cover;
   height: 100%;
   overflow: hidden;
 }
 
 .movie-poster__face--front-nine {
-  background: url('/images/Kamino.jpg') no-repeat center center;
+  background: url('./../images/Kamino.jpg') no-repeat center center;
   background-size: cover;
   height: 100%;
   overflow: hidden;
