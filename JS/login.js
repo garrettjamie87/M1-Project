@@ -34,6 +34,10 @@ class Login {
             // empty the container so the messages aren't stacked
             this.messageContainer.innerHTML = "";
             const p = document.createElement('p');
+           
+            p.style.color = 'rgb(211, 115, 163)';
+           
+            p.style.textAlign = 'center';
 
             // set the message
             if (!user) {

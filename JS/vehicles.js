@@ -18,7 +18,6 @@ async function getFirstPosition() {
        const createSpan= document.createElement('div')
        createSpan.innerHTML=`<p>${wookie.name}
        <p>Passengers: ${wookie.passengers}</p>
-       <p>Manufacturer: ${wookie.manufacturer}</p>
        <p>Cost: ${wookie.cost_in_credits}</p>
        
        `
@@ -49,7 +48,6 @@ getSecondPosition();
       const createSpan= document.createElement('div')
       createSpan.innerHTML=`<p>${wookie.name}
       <p>Passengers: ${wookie.passengers}</p>
-      <p>Manufacturer: ${wookie.manufacturer}</p>
       <p>Cost: ${wookie.cost_in_credits}</p>
       
        
@@ -78,7 +76,6 @@ getSecondPosition();
       const createSpan= document.createElement('div')
       createSpan.innerHTML=`<p>${wookie.name}
        <p>Passengers: ${wookie.passengers}</p>
-       <p>Manufacturer: ${wookie.manufacturer}</p>
        <p>Cost: ${wookie.cost_in_credits}</p>
        
       
@@ -108,7 +105,6 @@ getSecondPosition();
      const createSpan= document.createElement('div')
      createSpan.innerHTML=`<p>${wookie.name}
      <p>Passengers: ${wookie.passengers}</p>
-     <p>Manufacturer: ${wookie.manufacturer}</p>
      <p>Cost: ${wookie.cost_in_credits}</p>
      
      
@@ -138,7 +134,6 @@ getSecondPosition();
    const createSpan= document.createElement('div')
    createSpan.innerHTML=`<p>${wookie.name}
    <p>Passengers: ${wookie.passengers}</p>
-   <p>Manufacturer: ${wookie.manufacturer}</p>
    <p>Cost: ${wookie.cost_in_credits}</p>
    
    
@@ -168,7 +163,6 @@ getSecondPosition();
    const createSpan= document.createElement('div')
    createSpan.innerHTML=`<p>${wookie.name}
        <p>Passengers: ${wookie.passengers}</p>
-       <p>Manufacturer: ${wookie.manufacturer}</p>
        <p>Cost: ${wookie.cost_in_credits}</p>
        
    
@@ -198,7 +192,6 @@ async function getseventhPosition() {
   const createSpan= document.createElement('div')
   createSpan.innerHTML=`<p>${wookie.name}
        <p>Passengers: ${wookie.passengers}</p>
-       <p>Manufacturer: ${wookie.manufacturer}</p>
        <p>Cost: ${wookie.cost_in_credits}</p>
        
   
@@ -229,7 +222,6 @@ async function geteighthPosition() {
   const createSpan= document.createElement('div')
   createSpan.innerHTML=`<p>${wookie.name}
        <p>Passengers: ${wookie.passengers}</p>
-       <p>Manufacturer: ${wookie.manufacturer}</p>
        <p>Cost: ${wookie.cost_in_credits}</p>
        
   `
@@ -258,7 +250,6 @@ async function getninthPosition() {
   const createSpan= document.createElement('div')
   createSpan.innerHTML=`<p>${wookie.name}
   <p>Passengers: ${wookie.passengers}</p>
-  <p>Manufacturer: ${wookie.manufacturer}</p>
   <p>Cost: ${wookie.cost_in_credits}</p>
   
   
@@ -288,7 +279,6 @@ async function gettenthPosition() {
   const createSpan= document.createElement('div')
   createSpan.innerHTML=`<p>${wookie.name}
   <p>Passengers: ${wookie.passengers}</p>
-  <p>Manufacturer: ${wookie.manufacturer}</p>
   <p>Cost: ${wookie.cost_in_credits}</p>
   
   
